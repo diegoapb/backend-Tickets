@@ -3,18 +3,19 @@ import { RestApi } from "aws-cdk-lib/aws-apigateway";
 import { Construct } from "constructs";
 import { GenericTable } from "../infrastructure/genericTable";
 
-export class EventStack extends Stack {
-  public api = new RestApi(this, "apiMSEvents", {
-    restApiName: "apiMSEvents",
+export class TicketStack extends Stack {
+  private api = new RestApi(this, "apiMSTickets", {
+    restApiName: "apiMSTickets",
     description:
-      "This is the API for the Microservice Events",
+      "This is the API for the microservice Tickets",
   });
 
   private spacesTable = new GenericTable(this, {
-    tableName: "EventsTable",
+    tableName: "TicketsTable",
     primaryKey: "eventId",
     createLambdaPath: "Create",
     readLambdaPath: "Read",
+   
   });
 
   constructor(scope: Construct, id: string, props?: StackProps) {

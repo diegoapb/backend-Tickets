@@ -1,7 +1,13 @@
 
-export interface Space {
+export interface Event {
     eventId: string,
-    name: string,
-    location: string,
-    photoUrl?: string
+    title: string,
+    description: string,
+    date: string
+    location: string
+}export interface Ticket {
+    ticketId: string,
+    typeTicket: string,
+    description: string,
+    price: string
 }
