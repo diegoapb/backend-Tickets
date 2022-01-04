@@ -79,6 +79,7 @@ export class GenericTable {
       environment: {
         TABLE_NAME: this.props.tableName,
         PRIMARY_KEY: this.props.primaryKey,
+        
       },
     });
   }
