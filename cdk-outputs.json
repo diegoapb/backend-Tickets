@@ -1,0 +1,6 @@
+{
+  "apiStack": {
+    "apiPlutoTicketsEndpointD3A7D248": "https://r7cglhddhh.execute-api.us-east-2.amazonaws.com/prod/",
+    "snsTopicArn": "arn:aws:sns:us-east-2:598433661866:apiStack-MyTopic86869434-FTWMK235VB3B"
+  }
+}
